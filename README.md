@@ -32,9 +32,10 @@ docker run --rm -p 8000:8000 fastapi
 
 ## Terraform
 
-Run terraform apply
+Cloud Run terraform apply
 
 ```bash
+cd terraform/cloud-run
 terraform init
 terraform plan -var="project_id=<YOUR PROJECT ID>" -var="region=<REGION>"
 terraform apply -var="project_id=<YOUR PROJECT ID>" -var="region=<REGION>"
