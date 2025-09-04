@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>System Info</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='app.css') }}">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>System Info</h1>
+      <p class="sub">FastAPI + httpx</p>
+
+      <div id="grid" class="grid" role="table" aria-label="system info"></div>
+
+      <div class="actions">
+        <button id="refresh">Refresh</button>
+        <span id="status" class="muted" aria-live="polite"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', path='app.js') }}"></script>
+</body>
+
+</html>
